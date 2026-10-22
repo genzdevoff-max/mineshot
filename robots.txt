@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /config/
+Disallow: /phpmailer/
+
+Sitemap: https://mineshot.in/sitemap.xml

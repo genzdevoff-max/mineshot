@@ -1,24 +1,225 @@
+<?php
+// Dynamic SEO Configuration
+$currentPage = basename($_SERVER['PHP_SELF'] ?? '');
+$requestUri = $_SERVER['REQUEST_URI'] ?? '';
+if (strpos($requestUri, 'projects') !== false || $currentPage === 'projects.php') {
+    $isProjectsPage = true;
+} else {
+    $isProjectsPage = false;
+}
+
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? "https://" : "https://";
+$host = $_SERVER['HTTP_HOST'] ?? 'mineshot.in';
+$baseUrl = $protocol . $host;
+
+if ($isProjectsPage) {
+    $seoTitle = "Projects & Portfolio | Mineshot Production Hub | Commercial Photography Chennai";
+    $seoDescription = "View commercial photography, automotive shoots, fashion, product showcases, and ad film portfolio by Simbhu Sandy at Mineshot Production Hub, Chennai.";
+    $seoKeywords = "Mineshot Projects, Mineshot Portfolio, Simbhu Sandy photographer, Commercial photography portfolio Chennai, Automotive photographer in Chennai, Product photoshoot studio in Chennai, Fashion photographer in Chennai, Mineshot Production Hub";
+    $canonicalUrl = $baseUrl . "/projects.php";
+} else {
+    $seoTitle = "Mineshot Production Hub | Best Photographer in Chennai | Simbhu Sandy";
+    $seoDescription = "Mineshot Production Hub by Simbhu Sandy - Premier commercial photography & media production house in Chennai. Specializing in automotive, product, fashion, food photography, and commercial ad films.";
+    $seoKeywords = "Mineshot Production Hub, Mineshot Chennai, Mineshot Productions, Simbhu Sandy, Simbhu Sandy photographer, Simbhu Sandy Mineshot, Mineshot Studio Chennai, Best photographer in Chennai, Top commercial photographer in Chennai, Advertising photographer in Chennai, Production house in Chennai, Media production company in Chennai, Creative production studio Chennai, Automotive photographer in Chennai, Product photoshoot studio in Chennai, Fashion photographer in Chennai, Food photography studio in Chennai, Commercial ad film makers Chennai, Corporate video production Chennai";
+    $canonicalUrl = $baseUrl . "/";
+}
+$ogImage = $baseUrl . "/assets/img/mineshot/About.jpeg";
+?>
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <!-- Meta Tags -->
+    <!-- Character Set & Viewport -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="description" content="Mineshot - Production Hub">
-    <meta name="author" content="zigncode - website development company in chennai">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <!-- Primary Meta & SEO Tags -->
+    <title><?= htmlspecialchars($seoTitle) ?></title>
+    <meta name="title" content="<?= htmlspecialchars($seoTitle) ?>">
+    <meta name="description" content="<?= htmlspecialchars($seoDescription) ?>">
+    <meta name="keywords" content="<?= htmlspecialchars($seoKeywords) ?>">
+    <meta name="author" content="Simbhu Sandy - Mineshot Production Hub">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Mobile & Speed Optimization -->
+    <meta name="theme-color" content="#0d0d0d">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Mineshot">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Preconnect & DNS-Prefetch for Speed Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl) ?>">
+
+    <!-- Open Graph / Facebook / WhatsApp (Optimized 1200x630 Instant Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl) ?>">
+    <meta property="og:site_name" content="Mineshot Production Hub">
+    <meta property="og:title" content="<?= htmlspecialchars($seoTitle) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($seoDescription) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($ogImage) ?>">
+    <meta property="og:image:secure_url" content="<?= htmlspecialchars($ogImage) ?>">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mineshot Production Hub - Commercial Photography & Media House Chennai">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="<?= htmlspecialchars($canonicalUrl) ?>">
+    <meta name="twitter:site" content="@Mineshothub">
+    <meta name="twitter:creator" content="@Mineshothub">
+    <meta name="twitter:title" content="<?= htmlspecialchars($seoTitle) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($seoDescription) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
+
+    <!-- Enhanced Schema.org JSON-LD (LocalBusiness, ProfessionalService & Founder) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "<?= htmlspecialchars($baseUrl) ?>/#business",
+          "name": "Mineshot Production Hub",
+          "alternateName": "Mineshot Chennai",
+          "url": "<?= htmlspecialchars($baseUrl) ?>/",
+          "logo": "<?= htmlspecialchars($baseUrl) ?>/assets/img/mineshot/mineshot-logo.png",
+          "image": "<?= htmlspecialchars($ogImage) ?>",
+          "description": "Premier commercial photography and media production house in Chennai founded by Simbhu Sandy. Specializing in automotive, product, fashion, food photography, and commercial ad films.",
+          "telephone": "+919962222257",
+          "email": "simbhu@mineshot.in",
+          "priceRange": "$$$",
+          "currenciesAccepted": "INR",
+          "paymentAccepted": "Cash, Credit Card, UPI, Bank Transfer",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 13.0827,
+            "longitude": 80.2707
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Chennai"
+            },
+            {
+              "@type": "State",
+              "name": "Tamil Nadu"
+            },
+            {
+              "@type": "Country",
+              "name": "India"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "09:00",
+              "closes": "20:00"
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Commercial Photography & Production Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Automotive Commercial Photography",
+                  "description": "High-impact cinematic automotive shoots and commercial photography."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Product Photoshoot & E-commerce Photography",
+                  "description": "Clean, conversion-oriented product photography studio services."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Fashion & Lifestyle Photography",
+                  "description": "Editorial fashion campaigns and model photoshoots."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Food & Beverage Photography",
+                  "description": "Appetizing culinary and FMCG commercial food photography."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Commercial Ad Films & Video Production",
+                  "description": "End-to-end commercial ad filmmaking, corporate videos, and post-production."
+                }
+              }
+            ]
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Simbhu Sandy",
+            "jobTitle": "Founder & Lead Commercial Photographer",
+            "knowsAbout": [
+              "Commercial Photography",
+              "Automotive Photography",
+              "Lighting & Camera Logistics",
+              "Ad Film Direction"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/mineshotproductionhub-simbhusandy",
+              "https://www.instagram.com/mineshotproductionhub"
+            ]
+          },
+          "sameAs": [
+            "https://www.instagram.com/mineshotproductionhub",
+            "https://www.facebook.com/share/1DzjLjphcx/",
+            "https://youtube.com/@mineshotproductionhub",
+            "https://x.com/Mineshothub",
+            "https://pin.it/mRxtnsqg9"
+          ]
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicon and touch Icons -->
-    <link href="assets/img/mineshot/mineshot-icon.png" rel="shortcut icon" type="image/png">
     <link href="assets/img/mineshot/mineshot-icon.png" rel="shortcut icon" type="image/png">
     <link href="assets/img/mineshot/mineshot-icon.png" rel="apple-touch-icon">
     <link href="assets/img/mineshot/mineshot-icon.png" rel="apple-touch-icon" sizes="72x72">
     <link href="assets/img/mineshot/mineshot-icon.png" rel="apple-touch-icon" sizes="114x114">
     <link href="assets/img/mineshot/mineshot-icon.png" rel="apple-touch-icon" sizes="144x144">
-
-    <!-- Page Title -->
-    <title>Mineshot - Production Hub</title>
 
     <!-- Styles Include -->
     <link rel="stylesheet" href="assets/css/main.css">
