@@ -286,11 +286,11 @@ $ogImage = $baseUrl . "/assets/img/mineshot/About.jpeg";
                         <div class="mainnav">
                             <ul class="main-menu">
                                 <li class="menu-item"><a href="index.php">Home</a></li>
-                                <li class="menu-item"><a href="#expertise">Expertise</a></li>
-                                <li class="menu-item"><a href="#projects">Project</a></li>
-                                <li class="menu-item"><a href="#services">Service</a></li>
-                                <li class="menu-item"><a href="#about">About</a></li>
-                                <li class="menu-item"><a href="#contact">Contact</a></li>
+                                <li class="menu-item"><a href="<?= $isProjectsPage ? 'index.php#expertise' : '#expertise' ?>">Expertise</a></li>
+                                <li class="menu-item"><a href="projects.php">Projects</a></li>
+                                <li class="menu-item"><a href="<?= $isProjectsPage ? 'index.php#services' : '#services' ?>">Services</a></li>
+                                <li class="menu-item"><a href="<?= $isProjectsPage ? 'index.php#about' : '#about' ?>">About</a></li>
+                                <li class="menu-item"><a href="<?= $isProjectsPage ? 'index.php#contact' : '#contact' ?>">Contact</a></li>
                             </ul>
                         </div>
                     </div>
