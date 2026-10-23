@@ -66,8 +66,7 @@
         <div class="container">
             <div class="footer-bottom-inner">
                 <div class="copyright">
-                    <p><a href="index.php">Mineshot Production Hub</a> , All Rights
-                        Reserved & Designed by <a href="https://genzneuralx.com" style="color:#d3bc7e">Genz Neuralx</a></p>
+                    <p><a href="index.php">Mineshot Production Hub</a> , All Rights Reserved.</p>
                 </div>
                 <div class="social-box style-oval">
                     <ul>
