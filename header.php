@@ -13,14 +13,14 @@ $host = $_SERVER['HTTP_HOST'] ?? 'mineshot.in';
 $baseUrl = $protocol . $host;
 
 if ($isProjectsPage) {
-    $seoTitle = "Projects & Portfolio | Mineshot Production Hub | Commercial Photography Chennai";
-    $seoDescription = "View commercial photography, automotive shoots, fashion, product showcases, and ad film portfolio by Simbhu Sandy at Mineshot Production Hub, Chennai.";
-    $seoKeywords = "Mineshot Projects, Mineshot Portfolio, Simbhu Sandy photographer, Commercial photography portfolio Chennai, Automotive photographer in Chennai, Product photoshoot studio in Chennai, Fashion photographer in Chennai, Mineshot Production Hub";
+    $seoTitle = "Projects & Portfolio | Commercial Photography & Video Production Chennai | Mineshot";
+    $seoDescription = "Explore commercial photography, automotive shoots, product and food photography, video production, editing, and ad film portfolio by Mineshot Production Hub, Chennai.";
+    $seoKeywords = "Commercial Photography portfolio Chennai, Automotive Photography in Chennai, Product Photography in Chennai, Food Photography in Chennai, Video Production Company in Chennai, Commercial Videography in Chennai, Advertising Photography in Chennai, Car Photography in Chennai, Commercial Photographer in Chennai, Mineshot Projects, Mineshot Portfolio, Simbhu Sandy photographer";
     $canonicalUrl = $baseUrl . "/projects.php";
 } else {
-    $seoTitle = "Mineshot Production Hub | Best Photographer in Chennai | Simbhu Sandy";
-    $seoDescription = "Mineshot Production Hub by Simbhu Sandy - Premier commercial photography & media production house in Chennai. Specializing in automotive, product, fashion, food photography, and commercial ad films.";
-    $seoKeywords = "Mineshot Production Hub, Mineshot Chennai, Mineshot Productions, Simbhu Sandy, Simbhu Sandy photographer, Simbhu Sandy Mineshot, Mineshot Studio Chennai, Best photographer in Chennai, Top commercial photographer in Chennai, Advertising photographer in Chennai, Production house in Chennai, Media production company in Chennai, Creative production studio Chennai, Automotive photographer in Chennai, Product photoshoot studio in Chennai, Fashion photographer in Chennai, Food photography studio in Chennai, Commercial ad film makers Chennai, Corporate video production Chennai";
+    $seoTitle = "Mineshot Production Hub | Commercial Photography & Video Production in Chennai";
+    $seoDescription = "Mineshot Production Hub offers commercial photography, automotive photography, product and food photography, video production, editing, CGI and creative media services in Chennai.";
+    $seoKeywords = "Commercial Photography in Chennai, Video Production Company in Chennai, Product Photography in Chennai, Advertising Photography in Chennai, Commercial Videography in Chennai, Automotive Photography in Chennai, Food Photography in Chennai, Production House in Chennai, Creative Production Company in Chennai, Professional Photo and Video Production, Commercial Photographer in Chennai, Advertising Photographer in Chennai, Brand Photography Services, Corporate Product Photography, Catalogue Photography Services, Car Photography in Chennai, Automotive Photographer in Chennai, Bike Photography in Chennai, Car Advertisement Photography, Automotive Video Production, Automobile Commercial Shoot, Product Photographer in Chennai, E-commerce Product Photography, Product Advertising Photography, Food Photographer in Chennai, Restaurant Food Photography, Food Advertisement Video Production, Commercial Video Production in Chennai, Advertisement Film Production in Chennai, Corporate Video Production, Video Editing Services in Chennai, CGI Services in Chennai, 3D Product Animation, Music Production Studio in Chennai, Music Production Services in Chennai, Mineshot Production Hub";
     $canonicalUrl = $baseUrl . "/";
 }
 $ogImage = $baseUrl . "/assets/img/mineshot/About.jpeg";
@@ -153,46 +153,54 @@ $ogImage = $baseUrl . "/assets/img/mineshot/About.jpeg";
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Commercial Photography & Production Services",
+            "name": "Commercial Photography & Video Production Services Chennai",
             "itemListElement": [
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Automotive Commercial Photography",
-                  "description": "High-impact cinematic automotive shoots and commercial photography."
+                  "name": "Commercial Photography in Chennai",
+                  "description": "Professional commercial photography, brand photography, advertising campaigns, corporate product, and catalogue photography services."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Product Photoshoot & E-commerce Photography",
-                  "description": "Clean, conversion-oriented product photography studio services."
+                  "name": "Automotive Photography in Chennai",
+                  "description": "Cinematic car photography, automotive commercial shoots, bike photography, and automotive video production in Chennai."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Fashion & Lifestyle Photography",
-                  "description": "Editorial fashion campaigns and model photoshoots."
+                  "name": "Product & Food Photography in Chennai",
+                  "description": "E-commerce product photography, product advertising shoots, restaurant food photography, and food commercial video production."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Food & Beverage Photography",
-                  "description": "Appetizing culinary and FMCG commercial food photography."
+                  "name": "Video Production & Commercial Videography in Chennai",
+                  "description": "High-impact commercial video production, advertisement film production, and corporate video production in Chennai."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Commercial Ad Films & Video Production",
-                  "description": "End-to-end commercial ad filmmaking, corporate videos, and post-production."
+                  "name": "Video Editing & CGI Services in Chennai",
+                  "description": "Professional post-production, video editing services, CGI services, and 3D product animation."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Music Production Studio in Chennai",
+                  "description": "Complete audio and music production services for commercial films and advertising campaigns."
                 }
               }
             ]
@@ -202,10 +210,13 @@ $ogImage = $baseUrl . "/assets/img/mineshot/About.jpeg";
             "name": "Simbhu Sandy",
             "jobTitle": "Founder & Lead Commercial Photographer",
             "knowsAbout": [
-              "Commercial Photography",
-              "Automotive Photography",
-              "Lighting & Camera Logistics",
-              "Ad Film Direction"
+              "Commercial Photography in Chennai",
+              "Automotive Photography in Chennai",
+              "Video Production Company in Chennai",
+              "Product Photography in Chennai",
+              "Food Photography in Chennai",
+              "Commercial Videography in Chennai",
+              "CGI Services in Chennai"
             ],
             "sameAs": [
               "https://www.linkedin.com/in/mineshotproductionhub-simbhusandy",

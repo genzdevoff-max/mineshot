@@ -237,7 +237,7 @@ if ($pdo) {
                             <div class="col-lg-4 col-md-6 col-12 mb-4">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
-                                        <img src="<?= htmlspecialchars($item['image_url']) ?>" alt="<?= htmlspecialchars($item['title'] ?: 'Mineshot Creative Work - Simbhu Sandy') ?>" loading="lazy" decoding="async">
+                                        <img src="<?= htmlspecialchars($item['image_url']) ?>" alt="<?= htmlspecialchars($item['title'] ?: 'Commercial Photography & Video Production in Chennai - Mineshot') ?>" loading="lazy" decoding="async">
                                     </div>
                                 </div>
                             </div>

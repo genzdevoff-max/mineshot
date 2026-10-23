@@ -1,0 +1,37 @@
+===================================================================
+MINESHOT - PREVIOUS SEO KEYWORDS & METADATA BACKUP
+Date Saved: 2026-10-23
+File Location: header.php & Previous Setup
+===================================================================
+
+1. PREVIOUS HOMEPAGE SEO SETUP:
+-------------------------------------------------------------------
+Page: index.php (Home)
+
+SEO Title:
+Mineshot Production Hub | Best Photographer in Chennai | Simbhu Sandy
+
+Meta Description:
+Mineshot Production Hub by Simbhu Sandy - Premier commercial photography & media production house in Chennai. Specializing in automotive, product, fashion, food photography, and commercial ad films.
+
+Meta Keywords:
+Mineshot Production Hub, Mineshot Chennai, Mineshot Productions, Simbhu Sandy, Simbhu Sandy photographer, Simbhu Sandy Mineshot, Mineshot Studio Chennai, Best photographer in Chennai, Top commercial photographer in Chennai, Advertising photographer in Chennai, Production house in Chennai, Media production company in Chennai, Creative production studio Chennai, Automotive photographer in Chennai, Product photoshoot studio in Chennai, Fashion photographer in Chennai, Food photography studio in Chennai, Commercial ad film makers Chennai, Corporate video production Chennai
+
+
+2. PREVIOUS PROJECTS PAGE SEO SETUP:
+-------------------------------------------------------------------
+Page: projects.php (Projects & Portfolio)
+
+SEO Title:
+Projects & Portfolio | Mineshot Production Hub | Commercial Photography Chennai
+
+Meta Description:
+View commercial photography, automotive shoots, fashion, product showcases, and ad film portfolio by Simbhu Sandy at Mineshot Production Hub, Chennai.
+
+Meta Keywords:
+Mineshot Projects, Mineshot Portfolio, Simbhu Sandy photographer, Commercial photography portfolio Chennai, Automotive photographer in Chennai, Product photoshoot studio in Chennai, Fashion photographer in Chennai, Mineshot Production Hub
+
+
+===================================================================
+REPLACED BY: mineshot keywords.txt (Digital Marketing Team Setup)
+===================================================================
